@@ -1,0 +1,23 @@
+footer {
+  font-family: $font-primary;
+  background-color: $colour-headerfooterbg;
+  display: flex;
+  height: 120px;
+  max-width: 100%;
+  font-size: 180%;
+}
+.legalmention {
+  color: $colour-headerfooter;
+  margin: 40px 20px 40px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-right: auto;
+}
+.contactinfo {
+  color: $colour-headerfooter;
+  margin: 40px 20px 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}

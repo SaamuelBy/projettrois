@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-primary;
+  background-color: $colour-headerfooterbg;
+  margin-bottom: 40px;
+  height: 120px;
+  max-width: 100%;
+}

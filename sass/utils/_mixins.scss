@@ -1,0 +1,90 @@
+@mixin proj-prev {
+  display: inline-block;
+  width: 38%;
+  position: relative;
+  margin: 40px auto 40px;
+  box-shadow: $box-shadow;
+  &__heading {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 200%;
+    padding: 100px 0px 20px;
+  }
+  &__byline {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 300%;
+    padding: 20px 0px 100px;
+  }
+}
+
+@mixin project-menu {
+  position: relative;
+  padding: 10% auto 10%;
+  &__naming {
+    @include display_flex();
+    font-size: 200%;
+    font-style: oblique;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    text-decoration: underline;
+  }
+  &__heading {
+    @include display_flex();
+    font-size: 200%;
+    margin-bottom: 25px;
+  }
+  &__table {
+    font-size: 180%;
+    border-spacing: 30px;
+    @include display_flex();
+  }
+  &__tagbottom {
+    @include display_flex();
+    font-size: 180%;
+    font-style: oblique;
+    margin: 30px auto 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@mixin border-deco {
+  background: coral;
+  flex: 0 0 80px;
+  height: 4px;
+  margin-top: 0.5em;
+  margin-right: 10px;
+}
+
+@mixin proj-button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 35%;
+  height: 60px;
+  margin: 40px auto 40px;
+  background-color: $colour-headerfooterbg;
+  border-radius: 10px;
+  &__btn {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-size: 180%;
+    background-color: $colour-headerfooterbg;
+    border: none;
+    color: $colour-headerfooter;
+  }
+}
+
+@mixin display_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+.project {
+  @include project-menu;
+}
+
+.project__tags {
+  @include display_flex;
+  font-size: 250%;
+}
+
+.menu_v1 {
+  background-color: $colour-menuv1bg;
+  box-shadow: $box-shadow;
+  color: $colour-fontmenuv1;
+}
+.menu_v2 {
+  background-color: $colour-menuv2bg;
+  box-shadow: $box-shadow;
+  color: $colour-fontmenuv2;
+}
+.menu_v3 {
+  background-color: $colour-menuv3bg;
+  box-shadow: $box-shadow;
+  color: $colour-fontmenuv3;
+}
+.menu_v4 {
+  background-color: $colour-menuv4bg;
+  box-shadow: $box-shadow;
+  color: $colour-fontmenuv4;
+}
+.project__heading::after {
+  content: "------------";
+  color: black;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.project__heading::before {
+  content: "------------";
+  color: black;
+  padding-right: 20px;
+  padding-left: 10px;
+}
